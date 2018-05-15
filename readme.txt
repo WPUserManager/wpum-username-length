@@ -2,8 +2,8 @@
 Author URI: https://wpusermanager.com
 Plugin URI: https://wpusermanager.com
 Contributors: alessandro.tesoro
-Tags: wpum, wp user manager, username, username length, username characters, username amount, length restriction
-Requires at least: 4.1
+Tags: wpum, wp user manager, username, username length
+Requires at least: 4.7
 Tested up to: 4.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
