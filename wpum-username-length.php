@@ -100,7 +100,7 @@ if ( ! class_exists( 'WPUM_Username_Length' ) ) :
 		 * @return void
 		 */
 		public function includes() {
-
+			require_once WPUMUL_PLUGIN_DIR . 'includes/settings.php';
 		}
 
 		/**
