@@ -1,0 +1,8 @@
+{
+    "require": {
+        "wearerequired/wp-requirements-check": "^1.0",
+        "wp-user-manager/wpum-extension-activation": "dev-master"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
