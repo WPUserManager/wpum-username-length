@@ -116,7 +116,7 @@ if ( ! class_exists( 'WPUM_Username_Length' ) ) :
 
 			// Plugin version.
 			if ( ! defined( 'WPUMUL_VERSION' ) ) {
-				define( 'WPUMUL_VERSION', '1.0.0' );
+				define( 'WPUMUL_VERSION', '2.0.0' );
 			}
 
 			// Plugin Folder Path.
