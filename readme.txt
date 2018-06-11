@@ -1,7 +1,7 @@
-=== WPUM Username Length ===
+=== WP User Manager Username Length ===
 Author URI: https://wpusermanager.com
 Plugin URI: https://wpusermanager.com
-Contributors: alessandro.tesoro
+Contributors: alessandro.tesoro, wpusermanager
 Tags: wpum, wp user manager, username, username length
 Requires at least: 4.7
 Tested up to: 4.9
