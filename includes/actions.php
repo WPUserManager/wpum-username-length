@@ -28,7 +28,7 @@ function wpumul_verify_username_length( $pass, $fields, $values, $form ) {
 		$username   = $values['register']['username'];
 		$min_length = wpum_get_option( 'username_min_length' );
 		$max_length = wpum_get_option( 'username_max_length' );
-		$length     = strlen( $username );
+		$length     = function_exists( 'mb_strlen' ) ? mb_strlen( $username ) : strlen( $username );
 
 		if ( ! empty( $min_length ) && $min_length !== '0' ) {
 			if ( $length < $min_length ) {
