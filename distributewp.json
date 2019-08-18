@@ -1,0 +1,5 @@
+{
+  "plugin_slug": "wpum-username-length",
+  "deployment_folder": "release/wpum-username-length",
+  "deploy_assets": false
+}
