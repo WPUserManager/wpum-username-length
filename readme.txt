@@ -4,10 +4,10 @@ Plugin URI: https://wpusermanager.com
 Contributors: alessandro.tesoro, wpusermanager
 Tags: wpum, wp user manager, username, username length
 Requires at least: 4.7
-Tested up to: 4.9
+Tested up to: 5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 
 An add-on for WP User Manager that let's you define minimum and maximum username length.
 
@@ -43,6 +43,10 @@ Here [http://docs.wpusermanager.com/](http://docs.wpusermanager.com/)
 View all the screenshots here [https://wpusermanager.com/screenshots/](https://wpusermanager.com/screenshots/)
 
 == Changelog ==
+
+= 2.0.1 18th August 2019 =
+
+- Fix: UTF8 encoding of characters.
 
 = 2.0.0 =
 
