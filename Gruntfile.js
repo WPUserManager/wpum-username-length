@@ -59,7 +59,11 @@ module.exports = function( grunt ) {
 					'!Gruntfile.js',
 					'!package.json',
 					'!.gitignore',
-					'!.gitmodules'
+					'!.gitmodules',
+					'!distributewp.json',
+					'!composer.json',
+					'!readme.md',
+					'!yarn.lock'
 				],
 				dest: 'release/<%= pkg.name %>/'
 			}
