@@ -3,7 +3,7 @@
 Plugin Name: WPUM Username Length
 Plugin URI:  https://wpusermanager.com
 Description: Addon for WP User Manager, Set a minimum and maximum length for usernames upon registration.
-Version:     2.0.1
+Version:     2.0.2
 Author:      Alessandro Tesoro
 Author URI:  https://wpusermanager.com/
 License:     GPLv3+
@@ -116,7 +116,7 @@ if ( ! class_exists( 'WPUM_Username_Length' ) ) :
 
 			// Plugin version.
 			if ( ! defined( 'WPUMUL_VERSION' ) ) {
-				define( 'WPUMUL_VERSION', '2.0.1' );
+				define( 'WPUMUL_VERSION', '2.0.2' );
 			}
 
 			// Plugin Folder Path.
