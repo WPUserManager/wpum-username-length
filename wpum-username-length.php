@@ -214,7 +214,7 @@ if ( ! class_exists( 'WPUM_Username_Length' ) ) :
 			$requirements_check = new WPUM_Extension_Activation(
 				array(
 					'title'        => 'WPUM Username Length',
-					'wpum_version' => '2.0.0',
+					'wpum_version' => '2.2',
 					'file'         => __FILE__,
 				)
 			);
