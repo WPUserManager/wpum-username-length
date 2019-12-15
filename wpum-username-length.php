@@ -80,6 +80,10 @@ if ( ! class_exists( 'WPUM_Username_Length' ) ) :
 		 * Get things up and running.
 		 */
 		public function init() {
+			if ( ! $this->autoload() ) {
+				return;
+			}
+
 			// Verify the plugin meets WP and PHP requirements.
 			$this->plugin_can_run();
 
@@ -88,19 +92,37 @@ if ( ! class_exists( 'WPUM_Username_Length' ) ) :
 
 			// Plugin is activated now proceed.
 			$this->setup_constants();
-			$this->autoload();
 			$this->includes();
 			$this->init_hooks();
-
 		}
 
 		/**
 		 * Autoload composer and other required classes.
 		 *
-		 * @return void
+		 * @return bool
 		 */
-		private function autoload() {
-			require __DIR__ . '/vendor/autoload.php';
+		protected function autoload() {
+			if ( ! file_exists( __DIR__ . '/vendor' ) || ! file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+				add_action( 'admin_notices', array( $this, 'vendor_failed_notice' ) );
+
+				return false;
+			}
+
+			return require __DIR__ . '/vendor/autoload.php';
+		}
+
+		/**
+		 * Show the Vendor build issue notice.
+		 *
+		 * @since  1.0.0
+		 * @access public
+		 */
+		public function vendor_failed_notice() { ?>
+			<div class="error">
+				<p><?php printf( '<strong>WP User Manager</strong> &mdash; The %s addon plugin cannot be activated as it is missing the vendor directory.', esc_html( 'Username Length' ) ); ?></p>
+			</div>
+			<?php
+			deactivate_plugins( plugin_basename( __FILE__ ) );
 		}
 
 		/**
@@ -173,7 +195,6 @@ if ( ! class_exists( 'WPUM_Username_Length' ) ) :
 		 * @return boolean
 		 */
 		public function plugin_can_run() {
-
 			$requirements_check = new WP_Requirements_Check( array(
 				'title' => 'WPUM Username Length',
 				'php'   => '5.5',
@@ -182,7 +203,6 @@ if ( ! class_exists( 'WPUM_Username_Length' ) ) :
 			) );
 
 			return $requirements_check->passes();
-
 		}
 
 		/**
@@ -191,7 +211,6 @@ if ( ! class_exists( 'WPUM_Username_Length' ) ) :
 		 * @return boolean
 		 */
 		private function addon_can_run() {
-
 			$requirements_check = new WPUM_Extension_Activation(
 				array(
 					'title'        => 'WPUM Username Length',
@@ -201,7 +220,6 @@ if ( ! class_exists( 'WPUM_Username_Length' ) ) :
 			);
 
 			return $requirements_check->passes();
-
 		}
 
 	}
