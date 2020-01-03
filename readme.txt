@@ -1,13 +1,13 @@
 === WP User Manager Username Length ===
 Author URI: https://wpusermanager.com
 Plugin URI: https://wpusermanager.com
-Contributors: alessandro.tesoro, wpusermanager
+Contributors: wpusermanager
 Tags: wpum, wp user manager, username, username length
 Requires at least: 4.7
-Tested up to: 5.2
+Tested up to: 5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.2
+Stable tag: 2.0.3
 
 An add-on for WP User Manager that let's you define minimum and maximum username length.
 
@@ -43,6 +43,11 @@ Here [http://docs.wpusermanager.com/](http://docs.wpusermanager.com/)
 View all the screenshots here [https://wpusermanager.com/screenshots/](https://wpusermanager.com/screenshots/)
 
 == Changelog ==
+
+= 2.0.3 3rd January 2020 =
+
+- Fix: Ensure plugin vendor directory exists
+- Fix: PHP Fatal error:  Uncaught Error: Class 'WPUM_License' when updating the WP User Manager plugin
 
 = 2.0.2 18th August 2019 =
 
