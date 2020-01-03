@@ -62,6 +62,7 @@ module.exports = function( grunt ) {
 					'!.gitmodules',
 					'!distributewp.json',
 					'!composer.json',
+					'!composer.lock',
 					'!readme.md',
 					'!yarn.lock'
 				],
