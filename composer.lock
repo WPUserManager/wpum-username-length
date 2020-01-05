@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f9fa06b836c9365acac566b0f65fd59c",
+    "content-hash": "e859b9a7bd2647681ead29f5f04c7a45",
     "packages": [
         {
             "name": "composer/installers",
@@ -179,16 +179,16 @@
         },
         {
             "name": "wp-user-manager/wpum-extension-activation",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WPUserManager/wpum-extension-activation.git",
-                "reference": "a8f47c68048543fef1ba2656797feb66eeac3a03"
+                "reference": "e483750c317ff7c54720facdc5f894b61302736f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WPUserManager/wpum-extension-activation/zipball/a8f47c68048543fef1ba2656797feb66eeac3a03",
-                "reference": "a8f47c68048543fef1ba2656797feb66eeac3a03",
+                "url": "https://api.github.com/repos/WPUserManager/wpum-extension-activation/zipball/e483750c317ff7c54720facdc5f894b61302736f",
+                "reference": "e483750c317ff7c54720facdc5f894b61302736f",
                 "shasum": ""
             },
             "require": {
@@ -217,15 +217,13 @@
                 "wordpress",
                 "wp user manager"
             ],
-            "time": "2018-05-10T17:53:27+00:00"
+            "time": "2019-10-19T07:06:24+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "wp-user-manager/wpum-extension-activation": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
