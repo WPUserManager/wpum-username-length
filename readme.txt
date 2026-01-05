@@ -4,7 +4,7 @@ Plugin URI: https://wpusermanager.com
 Contributors: wpusermanager
 Tags: wpum, wp user manager, username, username length
 Requires at least: 4.7
-Tested up to: 5.3
+Tested up to: 6.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Stable Tag: 2.0.4
