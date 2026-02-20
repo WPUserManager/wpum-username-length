@@ -28,6 +28,13 @@ module.exports = function( grunt ) {
 					'!yarn.lock',
 					'!composer.lock',
 					'!composer.json',
+					'!.github',
+					'!release.json',
+					'!playwright.config.ts',
+					'!tsconfig.json',
+					'!.wp-env.json',
+					'!.wp-env.override.json',
+					'!test-results/**',
 					'!distributewp.json',
 					'!readme.md'
 				],
