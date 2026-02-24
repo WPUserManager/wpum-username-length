@@ -7,7 +7,7 @@ Requires at least: 4.7
 Tested up to: 6.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 2.0.5
+Stable Tag: 2.0.6
 
 An add-on for WP User Manager that let's you define minimum and maximum username length.
 
@@ -44,9 +44,10 @@ View all the screenshots here [https://wpusermanager.com/screenshots/](https://w
 
 == Changelog ==
 
-= 2.0.5 (24th Feb 2026) =
+= 2.0.6 (24th Feb 2026) =
 
 - Improvement: Tested up to WordPress 6.9
+- Fix: Remove dev files from release build
 
 = 2.0.4 (6th January 2020) =
 
