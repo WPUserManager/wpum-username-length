@@ -1,0 +1,7 @@
+{
+    "type": "addon",
+    "channels": { "wordpress_org": true, "edd": false },
+    "main_file": "wpum-username-length.php",
+    "version_locations": ["header", "constant", "package_json"],
+    "constant_name": "WPUMUL_VERSION"
+}
